@@ -4,6 +4,7 @@ author: "Tiffany Timbers & Jordan Bourak"
 format: 
   html:
     toc: true
+    number-sections: true
 bibliography: references.bib
 editor: source
 ---
@@ -21,14 +22,14 @@ between 1906 and 1972 for each province.
 
 Horse population data were sourced from the 
 [Government of Canada's Open Data website](http://open.canada.ca/en/open-data) 
-(Government of Canada, 2017a and Government of Canada, 2017b).
+[@horses1; @horses2].
 
 # Methods
 
-The R programming language (R Core Team, 2019) 
+The R programming language [@R]
 and the following R packages were used to perform the analysis: 
-knitr (Xie 2014), tidyverse (Wickham 2017), and Quarto (Allaire et al 2022). 
-*Note: this report is adapted from Timbers (2020).*
+knitr [@knitr], tidyverse [@tidyverse], and Quarto [@Allaire_Quarto_2022]. 
+*Note: this report is adapted from Timbers [@ttimbers-horses].*
 
 # Results
 
