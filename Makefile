@@ -21,7 +21,7 @@ reports/qmd_example.html: results reports/qmd_example.qmd
 reports/qmd_example.pdf: results reports/qmd_example.qmd
 	quarto render reports/qmd_example.qmd --to pdf
 
-index.html: reports/qmd_example.qmd
+index.html: reports/report.qmd
 	quarto render reports/qmd_example.qmd --to html --output index.html
 	mv index.html docs/index.html
 
