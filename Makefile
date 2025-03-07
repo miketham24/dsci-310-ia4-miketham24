@@ -24,6 +24,8 @@ reports/qmd_example.pdf: results reports/qmd_example.qmd
 	quarto render reports/qmd_example.qmd --to pdf
 
 docs/index.html: reports/qmd_example.qmd
+	rm -rf docs/*
+	mkdir -p docs
 	mkdir -p docs/results
 	cp results/*.png docs/results/
 	cp results/*.csv docs/results/
