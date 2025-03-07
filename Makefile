@@ -25,6 +25,9 @@ reports/qmd_example.pdf: results reports/qmd_example.qmd
 
 docs/index.html: reports/qmd_example.qmd
 	mkdir -p docs
+	mkdir -p docs/results
+	cp results/*.png docs/results/
+	cp results/*.csv docs/results/
 	quarto render reports/qmd_example.qmd --to html --output index.html
 	mv index.html docs/index.html
 	touch .nojekyll docs/.nojekyll
