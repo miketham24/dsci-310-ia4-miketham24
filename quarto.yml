@@ -1,3 +1,5 @@
 format:
   pdf:
     pdf-engine: pdflatex
+  html:
+    self-contained: true
