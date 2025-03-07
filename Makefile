@@ -6,7 +6,8 @@ all: results/horse_pop_plot_largest_sd.png \
 	results/horse_pops_plot.png \
 	results/horses_spread.csv \
 	reports/qmd_example.html \
-	reports/qmd_example.pdf
+	reports/qmd_example.pdf \
+	index.html
 
 
 
@@ -25,6 +26,7 @@ reports/qmd_example.pdf: results reports/qmd_example.qmd
 index.html: reports/qmd_example.qmd
 	quarto render reports/qmd_example.qmd --to html --output index.html
 	mv index.html docs/index.html
+	touch .nojekyll docs/.nojekyll
 
 reports:
 	make index.html
