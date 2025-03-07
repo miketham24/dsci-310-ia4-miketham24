@@ -3,3 +3,10 @@ format:
     pdf-engine: pdflatex
   html:
     self-contained: true
+    resources:
+      - results/
+project:
+  type: website
+  output-dir: docs
+  resources:
+    - results/

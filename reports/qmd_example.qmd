@@ -36,7 +36,7 @@ knitr [@knitr], tidyverse [@tidyverse], and Quarto [@Allaire_Quarto_2022].
 
 # Results
 
-![Horse populations for all provinces in Canada from 1906 - 1972.](../results/horse_pops_plot.png){#fig-horse}
+![Horse populations for all provinces in Canada from 1906 - 1972.](results/horse_pops_plot.png){#fig-horse}
 
 We can see from @fig-horse that Ontario, Saskatchewan and Alberta 
 have had the highest horse populations in Canada. 
@@ -56,7 +56,7 @@ We present the standard deviations in @tbl-horses-sd.
 #| tbl-cap: Standard deviation of historical (1906-1972) horse populations for each Canadian province.
 #| echo: false
 
-horses_sd_table <- read_csv("../results/horses_sd.csv")
+horses_sd_table <- read_csv("results/horses_sd.csv")
 largest_sd <- horses_sd_table$Province[1]
 knitr::kable(horses_sd_table)
 ```
@@ -67,7 +67,7 @@ $$s = \sqrt{\frac{\sum_{i=1}^N (x_i - \overline{x})^2}{N-1} }$$
 
 Additionally, note that in @tbl-horses-sd we consider the sample standard deviation of the number of horses during the same time span as @fig-horse.
 
-![Horse populations for the province with the largest standard deviation](../results/horse_pop_plot_largest_sd.png){#fig-horse-pop-largest-sd width=70%}
+![Horse populations for the province with the largest standard deviation](results/horse_pop_plot_largest_sd.png){#fig-horse-pop-largest-sd width=70%}
 
 In @fig-horse-pop-largest-sd we zoom in and look at the province of `{r} largest_sd`, which had the largest spread of values in terms of standard deviation.
 
