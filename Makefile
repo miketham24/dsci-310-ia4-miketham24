@@ -25,7 +25,7 @@ reports/qmd_example.pdf: results reports/qmd_example.qmd
 index.html: reports/qmd_example.qmd
 	quarto render reports/qmd_example.qmd --to html --output index.html
 	mv index.html docs/index.html
-	mv .nojekyll docs/.nojekyll
+	touch .nojekyll docs/.nojekyll
 
 reports:
 	make index.html
