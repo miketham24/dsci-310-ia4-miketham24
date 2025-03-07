@@ -5,3 +5,4 @@
 **.DS_Store
 # pkgdown site
 docs/
+/.quarto/
