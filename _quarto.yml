@@ -3,7 +3,10 @@ format:
     pdf-engine: pdflatex
   html:
     self-contained: true
-    embed-resources: true
+    resources:
+      - results/
 project:
   type: website
   output-dir: docs
+  resources:
+    - results/
