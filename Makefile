@@ -1,5 +1,6 @@
 # author: Jordan Bourak & Tiffany Timbers
 # date: 2021-11-22
+.PHONY: all clean reports
 
 all: results/horse_pop_plot_largest_sd.png \
 	results/horse_pops_plot.png \
@@ -24,6 +25,9 @@ reports/qmd_example.pdf: results reports/qmd_example.qmd
 index.html: reports/report.qmd
 	quarto render reports/qmd_example.qmd --to html --output index.html
 	mv index.html docs/index.html
+
+reports:
+	make index.html
 
 # clean
 clean:
